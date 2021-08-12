@@ -1,0 +1,26 @@
+@url = http://localhost:3000
+
+GET {{url}}/video
+
+###
+GET {{url}}/video/610b991c8bc2da97b03090a5
+###
+POST {{url}}/video
+Content-Type: application/json
+
+{
+    "url": "https://www.youtube.com/watch?v=xpVfcZ0ZcFM",
+    "title": "Drake - God's Plan",
+    "description": "musica"
+}
+
+###
+PUT {{url}}/video/6113798c4f716d683877ce61
+Content-Type: application/json
+
+{
+    "description": "musica"
+}
+
+###
+DELETE {{url}}/video/610b991c8bc2da97b03090a5
